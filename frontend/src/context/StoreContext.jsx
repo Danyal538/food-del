@@ -5,7 +5,7 @@ import { createContext, useEffect, useState } from "react";
 export const StoreContext = createContext(null);
 const StoreContextProvider = (props) => {
     const [cartItems, setCartItems] = useState({})
-    const url = "http://localhost:4000";
+    const url = "https://food-del-production-f704.up.railway.app";
     const [token, setToken] = useState("");
     const [food_list, setFoodList] = useState([])
     const addToCart = async (itemId) => {
